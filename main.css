@@ -1,26 +1,56 @@
+
+
 body {
     background: #515;
     color: white;
 }
 
-.parent-1 {
-    display: flex;
-    flex-direction: row;
+@media(min-width:600px) {
+    .parent-1{
+        display: flex;
+
+    }
+
+    .parent-2{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .parent-3{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
 }
 
-.parent-1 div {
+.parent-1 div,
+.parent-2 div,
+.parent-3 div{
     border: 1px solid #ccc;
     padding: 10px;
 }
 
 .item-1 {
-
-}
+    flex: 2;
+    order: 2
+} 
 
 .item-2 {
-
+    flex: 2;
+    order: 3;
 }
 
 .item-3 {
+    flex: 1;
+    order: 1;
+}
 
+.item-4 {
+    flex-basis: 20%;
+}
+
+img {
+    width: 50px;
+    height: 50px;
 }
