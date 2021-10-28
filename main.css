@@ -16,7 +16,8 @@ body {
 }
 
 .brand,
-.navbar-list-link {
+.navbar-list-link,
+.navbar-list-dropdown-link{
     text-transform: uppercase;
     color: #303137;
     font-weight: bold;
@@ -39,33 +40,57 @@ body {
 }
 
 ul.navbar-list.responsive {
-    display: blockl;
+    display: flex;
 }
 
-.navbar-list .navbar-list-link {
+.navbar-list .navbar-list-link,
+.navbar-list .navbar-list-dropdown-link{
     text-decoration: none;
     padding-left: 10px; 
     padding-right: 10px;
     font-size: 1.5rem;
 }
 
-.dropdown-link {
+a.navbar-list-dropdown-link {
     display: none;
 }
 
 @media (max-width:768px) {
+
+    /*########## Navbar sm ##########*/
+    .navbar {
+        align-items: flex-start;
+    }
+
     ul.navbar-list li a.navbar-list-link{
         display: none;
     }
 
-    ul.navbar-list li.dropdown-link {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 20px;
+    ul.navbar-list a.navbar-list-dropdown-link {
+        display: flex;
     }
 
-    ul.navbar-list.responsive li {
-        display: block;
+    ul.navbar-list.responsive li a.navbar-list-link{
+        display: flex;
+
     }
+
+    ul.navbar-list.responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    
+    ul.navbar-list.responsive :nth-child(1) {order: 2;}
+    ul.navbar-list.responsive :nth-child(2) {order: 3;}
+    ul.navbar-list.responsive :nth-child(3) {order: 4;}
+    ul.navbar-list.responsive :nth-child(4) {order: 5;}
+    ul.navbar-list.responsive :nth-child(5) {order: 1;}
+    
+    
+
+
+
+
+
 }
