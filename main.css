@@ -54,18 +54,18 @@ ul.navbar-list.responsive {
 }
 
 @media (max-width:768px) {
-    ul.navbar-list li {
+    ul.navbar-list li a.navbar-list-link{
         display: none;
     }
-    
-     ul.navbar-list li.dropdown-link {
+
+    ul.navbar-list li.dropdown-link {
         display: block;
         position: absolute;
         top: 15px;
         right: 20px;
     }
-    
-    ul.navbar-list.responsive li a.navbar-list-link {
+
+    ul.navbar-list.responsive li {
         display: block;
     }
 }
