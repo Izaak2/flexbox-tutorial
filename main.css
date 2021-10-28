@@ -208,7 +208,7 @@ button.quote-btn {
         margin: 1rem 0 .5rem;
     }
     .quote-btn-wrapper {
-      margin-top: 2rem;
+        margin-top: 2rem;
     }
 
 }
@@ -255,5 +255,25 @@ button.quote-btn {
     background-color: #f1f3fa;
 }
 
+form label {
+    font-size: 0.9rem;
+}
 
+.form-group {
+    margin-bottom: 0.9rem;
+}
+
+.form-group {
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    color: #292b2c;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    padding: 0.4rem 0.74rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-clip: padding-box;
+    display: block;
+}
 
