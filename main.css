@@ -11,7 +11,7 @@ body {
     padding: 10px;
     align-items: center;
     max-width: 1140px;
-    flex-basis: 100%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -115,3 +115,72 @@ header {
     font-size: 3rem;     
     font-weight: 900;
 }
+
+/*########## Section 1##########*/
+section.services {
+    background-color: #f1f3fa;
+    padding: 4rem 1rem;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.media-object {
+    display: flex;
+    margin: 5% 0;
+}
+
+.icon-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+img.icon {
+    width: 227px;
+}
+
+.blurb-wrapper {
+    flex: 1;
+}
+
+.blurb-wrapper h3 {
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.blurb-info p {
+    margin: 0;
+    color: #646b90;
+    font-size: 1.1rem;
+}
+
+.icon-wrapper.right {
+    order: 2;
+}
+
+.blurb-wrapper.left {
+    order: 1;
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
