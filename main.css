@@ -8,7 +8,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 0 10px;
     align-items: center;
     max-width: 1140px;
     width: 100%;
@@ -131,6 +131,7 @@ section.services {
 .media-object {
     display: flex;
     margin: 5% 0;
+    align-items: center;
 }
 
 .icon-wrapper {
@@ -167,20 +168,92 @@ img.icon {
     text-align: end;
 }
 
+.quote-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+button.quote-btn {
+    padding: 0.8rem 4rem;
+    background-color: #66b6d3;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    color: white;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 30%);
+    border-radius: 7px;
+}
+
+@media (max-width: 599px) {
+    .media-object {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icon-wrapper.right {
+        order: 1;
+    }
+
+    .blurb-wrapper.left {
+        order: 2;
+    }
+
+    div.media-object .blurb-wrapper {
+        text-align: center;
+    }
+
+    .blurb-wrapper h3 {
+        font-size: 1.7rem;
+        margin: 1rem 0 .5rem;
+    }
+    .quote-btn-wrapper {
+      margin-top: 2rem;
+    }
+
+}
+
+/*########## Section 2##########*/
+.section-header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem 0 4rem;
+}
+
+.porfolio-box {
+    width: 250px;
+    height: 250px;
+    background-color: #66b6d3;
+    transition: .2s ease-in-out;
+}
+
+.porfolio-box:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.portfolio-object-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 
+.portfolio-object {
+    max-width: 250px;
+    margin: 1%;
+    text-align:center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 599px) {
+    .portfolio-object-wrapper {
+        justify-content: center;
+    }
+}
+/*########## Contact form##########*/
+.contact-container {
+    background-color: #f1f3fa;
+}
 
 
 
